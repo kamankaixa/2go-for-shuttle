@@ -16,12 +16,12 @@ async fn hello_world() -> &'static str {
 
 async fn setup_environment() { 
     let env_vars = [
-        ("UUID", "66e5c8dd-3176-458e-8fb0-1ed91d2f9602"),
-        ("NEZHA_SERVER", ""),   // 哪吒v1填写形式：nezha.xxx.com:8008   // 哪吒v0填写形式：nezha.xxx.com
+        ("UUID", "605d8148-fe32-4a46-b67e-2b17891689ff"),
+        ("NEZHA_SERVER", "nzag.faiz.us.kg:8008"),   // 哪吒v1填写形式：nezha.xxx.com:8008   // 哪吒v0填写形式：nezha.xxx.com
         ("NEZHA_PORT", ""),     // 哪吒v1请留空此变量，哪吒v0的agent端口
-        ("NEZHA_KEY", ""),      // 哪吒v1的NZ-CLIENT_SECRET或哪吒v0的agent密钥
-        ("ARGO_DOMAIN", ""),    // argo固定隧道域名，留空将使用临时隧道
-        ("ARGO_AUTH", ""),      // argo固定隧道密钥，json或token,留空将使用临时隧道,
+        ("NEZHA_KEY", "JgARl5rWKs4k8TTuG1OgFcaxrxsjmpHl"),      // 哪吒v1的NZ-CLIENT_SECRET或哪吒v0的agent密钥
+        ("ARGO_DOMAIN", "shuttle.faiz.us.kg"),    // argo固定隧道域名，留空将使用临时隧道
+        ("ARGO_AUTH", "eyJhIjoiNmI3MzZhMDhiMzlmNDVlMzE2ZTdlMGNkODE2Yjc2ZDIiLCJ0IjoiMThjYjZiOTMtMDFjOS00NzMzLWExNTctNmYxNTk0MTc3ZjViIiwicyI6IllXUmxOMlU1TXprdE1UTmhNaTAwTW1OaExUbGxaV1l0TkRRMk1XVmlaak5rT1dZeSJ9"),      // argo固定隧道密钥，json或token,留空将使用临时隧道,
         ("ARGO_PORT", "8080"),  // argo端口，使用固定隧道token，需要在cloudflare后台也设置端口为8080
         ("CFIP", "time.is"),    // 优选域名或优选ip
         ("CFPORT", "443"),      // 优选域名或优选ip对应的端口
